@@ -10,19 +10,26 @@ import logging
 import uuid
 from typing import Any
 
-import chromadb
-
 logger = logging.getLogger(__name__)
+
+# Guard chromadb import — crashes on Python 3.14 due to protobuf/grpc issue
+try:
+    import chromadb
+    _CHROMADB_AVAILABLE = True
+except Exception as _chroma_err:
+    chromadb = None  # type: ignore
+    _CHROMADB_AVAILABLE = False
+    logger.warning("chromadb unavailable: %s — RAG features disabled", _chroma_err)
 
 # Use SentenceTransformer if available (local dev), otherwise fall back to
 # chromadb's built-in ONNX MiniLM embedder (no torch — works on Streamlit Cloud)
-try:
-    from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
-    _EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-    _USE_SENTENCE_TRANSFORMERS = True
-except Exception:
-    _USE_SENTENCE_TRANSFORMERS = False
-    _EMBEDDING_MODEL = "onnx-MiniLM-L6-v2"
+_USE_SENTENCE_TRANSFORMERS = False
+if _CHROMADB_AVAILABLE:
+    try:
+        from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
+        _USE_SENTENCE_TRANSFORMERS = True
+    except Exception:
+        _USE_SENTENCE_TRANSFORMERS = False
 
 COLLECTION_NAMES = [
     "historical_exceptions",
@@ -36,6 +43,8 @@ class CloseCommandVectorStore:
     """Manages ChromaDB collections for Close Command RAG."""
 
     def __init__(self, persist_directory: str = "./close_command_vectorstore") -> None:
+        if not _CHROMADB_AVAILABLE:
+            raise ImportError("chromadb is not available in this environment — RAG features disabled")
         self.persist_directory = persist_directory
         try:
             self._client = chromadb.PersistentClient(path=persist_directory)

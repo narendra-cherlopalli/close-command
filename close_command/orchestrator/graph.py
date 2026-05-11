@@ -40,16 +40,16 @@ from close_command.database.persistence import CloseCommandDB
 logger = logging.getLogger(__name__)
 
 try:
-    from close_command.rag.vectorstore import CloseCommandVectorStore
+    from close_command.rag.vectorstore import CloseCommandVectorStore, _CHROMADB_AVAILABLE
     from close_command.rag.retriever import CloseCommandRetriever
     from close_command.rag.indexer import CloseCommandIndexer
-    _RAG_AVAILABLE = True
-except ImportError as _rag_import_err:
+    _RAG_AVAILABLE = _CHROMADB_AVAILABLE
+except Exception as _rag_import_err:
     _RAG_AVAILABLE = False
     CloseCommandVectorStore = None  # type: ignore
     CloseCommandRetriever = None  # type: ignore
     CloseCommandIndexer = None  # type: ignore
-    logger.warning("RAG components unavailable (chromadb not installed): %s", _rag_import_err)
+    logger.warning("RAG components unavailable: %s", _rag_import_err)
 
 # ──────────────────────────────────────────────────────────────────────
 # Shared infrastructure (singletons per process)
