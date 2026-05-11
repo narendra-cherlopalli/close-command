@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+plotly
+anthropic
+langchain-anthropic
+langchain-core
+langgraph
+python-dotenv
+requests

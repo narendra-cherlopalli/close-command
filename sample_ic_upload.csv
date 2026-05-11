@@ -1,0 +1,20 @@
+Reference,Entity,Counterparty,Account,Transaction_Type,Amount_USD,Currency,Amount_Local,Posting_Date,Description
+IC-2025-001,EBIC,FERTIL,Intercompany Sales [4100],Trade,500000.00,USD,500000.00,2025-01-15,Ammonia sale to Fertil UAE Q1
+IC-2025-001,FERTIL,EBIC,Intercompany Purchases [5100],Trade,500000.00,AED,1838235.29,2025-01-15,Ammonia purchase from EBIC Q1
+IC-2025-002,SORFERT,EFC,IC Loans Receivable [1800],Loan,2000000.00,EUR,1851851.85,2025-01-20,Working capital loan to EFC
+IC-2025-002,EFC,SORFERT,IC Loans Payable [2800],Loan,2000000.00,USD,2000000.00,2025-01-20,Working capital loan from Sorfert
+IC-2025-003,EFC,GULFCHEM,IC Service Revenue [4200],Service,150000.00,USD,150000.00,2025-01-31,Technical consulting services Q1
+IC-2025-003,GULFCHEM,EFC,IC Service Expense [5200],Service,150000.00,AED,551470.59,2025-01-31,Technical consulting from EFC Q1
+IC-2025-004,FERTIL,NATPET,IC Royalties Receivable [4300],Royalty,300000.00,AED,1102941.18,2025-02-05,Technology license royalty Q1
+IC-2025-004,NATPET,FERTIL,IC Service Expense [5200],Royalty,300000.00,SAR,1123595.51,2025-02-05,Technology license fee to Fertil Q1
+IC-2025-005,GMGI,EGYCO,Intercompany Sales [4100],Trade,1200000.00,USD,1200000.00,2025-02-10,Urea bulk sale to EGYCO
+IC-2025-005,EGYCO,GMGI,Intercompany Purchases [5100],Trade,1203500.00,USD,1203500.00,2025-02-12,Urea bulk purchase from GMGI
+IC-2025-006,NATPET,EBIC,Intercompany Sales [4100],Trade,750000.00,SAR,2808988.76,2025-02-15,Methanol supply to EBIC
+IC-2025-006,EBIC,NATPET,Intercompany Purchases [5100],Trade,750000.00,USD,750000.00,2025-02-15,Methanol supply from NATPET
+IC-2025-007,EGYCO,SORFERT,IC Loans Receivable [1800],Loan,5000000.00,USD,5000000.00,2025-03-01,Long-term facility loan to Sorfert
+IC-2025-007,SORFERT,EGYCO,IC Loans Payable [2800],Loan,5000000.00,EUR,4629629.63,2025-03-01,Long-term facility loan from EGYCO
+IC-2025-008,GULFCHEM,GMGI,IC Dividends Income [4500],Dividend,800000.00,AED,2941176.47,2025-03-15,Dividend declared to parent GMGI
+IC-2025-008,GMGI,GULFCHEM,IC Service Expense [5200],Dividend,800000.00,USD,800000.00,2025-03-15,Dividend received from GULFCHEM
+IC-2025-009,EBIC,SORFERT,IC Service Revenue [4200],Service,95000.00,USD,95000.00,2025-03-20,Shared services recharge Q1
+IC-2025-009,SORFERT,EBIC,IC Service Expense [5200],Service,96200.00,EUR,88888.89,2025-03-22,Shared services from EBIC Q1
+IC-2025-010,FERTIL,EFC,Intercompany Sales [4100],Trade,420000.00,AED,1544117.65,2025-03-28,Chemical feedstock supply

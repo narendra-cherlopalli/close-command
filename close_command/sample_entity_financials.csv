@@ -1,0 +1,129 @@
+line_id,entity_code,account_code,account_description,account_type,account_category,is_intercompany,icp_entity,rule_code,flow,amount,currency,period,scenario
+1,HCG-UK,4000,Product Revenue,P&L,Revenue,False,,,F00,28500000,GBP,2024-12,Actual
+2,HCG-UK,4010,Service Revenue,P&L,Revenue,False,,,F00,14200000,GBP,2024-12,Actual
+3,HCG-UK,4020,Other Revenue,P&L,Revenue,False,,,F00,9800000,GBP,2024-12,Actual
+4,HCG-UK,5000,Cost of Goods Sold,P&L,COGS,False,,,F00,-18200000,GBP,2024-12,Actual
+5,HCG-UK,5010,Service Delivery Cost,P&L,COGS,False,,,F00,-6500000,GBP,2024-12,Actual
+6,HCG-UK,6000,Selling & Marketing,P&L,OpEx,False,,,F00,-7400000,GBP,2024-12,Actual
+7,HCG-UK,6010,General & Admin,P&L,OpEx,False,,,F00,-2100000,GBP,2024-12,Actual
+8,HCG-UK,6020,R&D Expense,P&L,OpEx,False,,,F00,-3200000,GBP,2024-12,Actual
+9,HCG-UK,4100,IC Product Revenue – HCG-DE,P&L,Revenue,True,HCG-DE,IC-001,F00,5000000,GBP,2024-12,Actual
+10,HCG-UK,4110,IC Mgmt Services Revenue – HCG-US,P&L,Revenue,True,HCG-US,IC-004,F00,1800000,GBP,2024-12,Actual
+11,HCG-UK,4120,IC Royalty Revenue – HCG-SG,P&L,Revenue,True,HCG-SG,IC-005,F00,900000,GBP,2024-12,Actual
+12,HCG-UK,5100,IC Service Cost – SHARED,P&L,COGS,True,SHARED,IC-001,F00,-2200000,GBP,2024-12,Actual
+13,HCG-UK,1000,Trade Receivables,BS,Asset,False,,,F00,12400000,GBP,2024-12,Actual
+14,HCG-UK,1500,Property Plant & Equipment,BS,Asset,False,,,F00,45000000,GBP,2024-12,Actual
+15,HCG-UK,1100,Inventory,BS,Asset,False,,,F00,18000000,GBP,2024-12,Actual
+16,HCG-UK,1600,IC Receivable – HCG-DE,BS,Asset,True,HCG-DE,IC-002,F00,5000000,GBP,2024-12,Actual
+17,HCG-UK,1610,IC Receivable – HCG-US,BS,Asset,True,HCG-US,IC-002,F00,1800000,GBP,2024-12,Actual
+18,HCG-UK,1620,IC Receivable – HCG-SG,BS,Asset,True,HCG-SG,IC-002,F00,900000,GBP,2024-12,Actual
+19,HCG-UK,2600,IC Payable – SHARED,BS,Liability,True,SHARED,IC-002,F00,-2200000,GBP,2024-12,Actual
+20,HCG-UK,2000,Trade Payables,BS,Liability,False,,,F00,-8900000,GBP,2024-12,Actual
+21,HCG-UK,2100,Long-term Debt,BS,Liability,False,,,F00,-15000000,GBP,2024-12,Actual
+22,HCG-DE,4000,Product Revenue,P&L,Revenue,False,,,F00,22000000,EUR,2024-12,Actual
+23,HCG-DE,4010,Service Revenue,P&L,Revenue,False,,,F00,16500000,EUR,2024-12,Actual
+24,HCG-DE,4020,Other Revenue,P&L,Revenue,False,,,F00,8700000,EUR,2024-12,Actual
+25,HCG-DE,5000,Cost of Goods Sold,P&L,COGS,False,,,F00,-14200000,EUR,2024-12,Actual
+26,HCG-DE,5010,Service Delivery Cost,P&L,COGS,False,,,F00,-4800000,EUR,2024-12,Actual
+27,HCG-DE,6000,Selling & Marketing,P&L,OpEx,False,,,F00,-6100000,EUR,2024-12,Actual
+28,HCG-DE,6010,General & Admin,P&L,OpEx,False,,,F00,-1900000,EUR,2024-12,Actual
+29,HCG-DE,6020,R&D Expense,P&L,OpEx,False,,,F00,-2800000,EUR,2024-12,Actual
+30,HCG-DE,5100,IC Product Cost – HCG-UK,P&L,COGS,True,HCG-UK,IC-001,F00,-5450000,EUR,2024-12,Actual
+31,HCG-DE,4100,IC Product Revenue – HCG-FR,P&L,Revenue,True,HCG-FR,IC-001,F00,4200000,EUR,2024-12,Actual
+32,HCG-DE,4110,IC Mgmt Services Revenue – HCG-NL,P&L,Revenue,True,HCG-NL,IC-004,F00,1500000,EUR,2024-12,Actual
+33,HCG-DE,5110,IC IT Services Cost – SHARED,P&L,COGS,True,SHARED,IC-004,F00,-872000,EUR,2024-12,Actual
+34,HCG-DE,1000,Trade Receivables,BS,Asset,False,,,F00,9800000,EUR,2024-12,Actual
+35,HCG-DE,1500,Property Plant & Equipment,BS,Asset,False,,,F00,38000000,EUR,2024-12,Actual
+36,HCG-DE,2600,IC Payable – HCG-UK,BS,Liability,True,HCG-UK,IC-002,F00,-5450000,EUR,2024-12,Actual
+37,HCG-DE,1600,IC Receivable – HCG-FR,BS,Asset,True,HCG-FR,IC-002,F00,4200000,EUR,2024-12,Actual
+38,HCG-DE,1610,IC Receivable – HCG-NL,BS,Asset,True,HCG-NL,IC-002,F00,1500000,EUR,2024-12,Actual
+39,HCG-DE,2610,IC Payable – SHARED,BS,Liability,True,SHARED,IC-002,F00,-872000,EUR,2024-12,Actual
+40,HCG-DE,2000,Trade Payables,BS,Liability,False,,,F00,-7200000,EUR,2024-12,Actual
+41,HCG-DE,2100,Long-term Debt,BS,Liability,False,,,F00,-20000000,EUR,2024-12,Actual
+42,HCG-US,4000,Product Revenue,P&L,Revenue,False,,,F00,31000000,USD,2024-12,Actual
+43,HCG-US,4010,Service Revenue,P&L,Revenue,False,,,F00,12500000,USD,2024-12,Actual
+44,HCG-US,4020,Other Revenue,P&L,Revenue,False,,,F00,7200000,USD,2024-12,Actual
+45,HCG-US,5000,Cost of Goods Sold,P&L,COGS,False,,,F00,-19800000,USD,2024-12,Actual
+46,HCG-US,5010,Service Delivery Cost,P&L,COGS,False,,,F00,-4100000,USD,2024-12,Actual
+47,HCG-US,6000,Selling & Marketing,P&L,OpEx,False,,,F00,-8200000,USD,2024-12,Actual
+48,HCG-US,6010,General & Admin,P&L,OpEx,False,,,F00,-2400000,USD,2024-12,Actual
+49,HCG-US,6020,R&D Expense,P&L,OpEx,False,,,F00,-3600000,USD,2024-12,Actual
+50,HCG-US,5100,IC Mgmt Services Cost – HCG-UK,P&L,COGS,True,HCG-UK,IC-004,F00,-2286000,USD,2024-12,Actual
+51,HCG-US,4100,IC Product Revenue – HCG-AU,P&L,Revenue,True,HCG-AU,IC-001,F00,3500000,USD,2024-12,Actual
+52,HCG-US,4110,IC Royalty Revenue – HCG-SG,P&L,Revenue,True,HCG-SG,IC-005,F00,1200000,USD,2024-12,Actual
+53,HCG-US,5110,IC HR Services Cost – SHARED,P&L,COGS,True,SHARED,IC-004,F00,-762000,USD,2024-12,Actual
+54,HCG-US,1000,Trade Receivables,BS,Asset,False,,,F00,15200000,USD,2024-12,Actual
+55,HCG-US,1500,Property Plant & Equipment,BS,Asset,False,,,F00,52000000,USD,2024-12,Actual
+56,HCG-US,1100,Inventory,BS,Asset,False,,,F00,8500000,USD,2024-12,Actual
+57,HCG-US,2600,IC Payable – HCG-UK,BS,Liability,True,HCG-UK,IC-002,F00,-2286000,USD,2024-12,Actual
+58,HCG-US,1600,IC Receivable – HCG-AU,BS,Asset,True,HCG-AU,IC-002,F00,3500000,USD,2024-12,Actual
+59,HCG-US,1610,IC Receivable – HCG-SG,BS,Asset,True,HCG-SG,IC-002,F00,1200000,USD,2024-12,Actual
+60,HCG-US,2610,IC Payable – SHARED,BS,Liability,True,SHARED,IC-002,F00,-762000,USD,2024-12,Actual
+61,HCG-US,2000,Trade Payables,BS,Liability,False,,,F00,-11200000,USD,2024-12,Actual
+62,HCG-US,2100,Long-term Debt,BS,Liability,False,,,F00,-25000000,USD,2024-12,Actual
+63,HCG-SG,4000,Product Revenue,P&L,Revenue,False,,,F00,18000000,SGD,2024-12,Actual
+64,HCG-SG,4010,Service Revenue,P&L,Revenue,False,,,F00,9500000,SGD,2024-12,Actual
+65,HCG-SG,5000,Cost of Goods Sold,P&L,COGS,False,,,F00,-11200000,SGD,2024-12,Actual
+66,HCG-SG,5010,Service Delivery Cost,P&L,COGS,False,,,F00,-3100000,SGD,2024-12,Actual
+67,HCG-SG,6000,Selling & Marketing,P&L,OpEx,False,,,F00,-4200000,SGD,2024-12,Actual
+68,HCG-SG,6010,General & Admin,P&L,OpEx,False,,,F00,-900000,SGD,2024-12,Actual
+69,HCG-SG,6020,R&D Expense,P&L,OpEx,False,,,F00,-1800000,SGD,2024-12,Actual
+70,HCG-SG,5100,IC Royalty Cost – HCG-UK,P&L,COGS,True,HCG-UK,IC-005,F00,-1216216,SGD,2024-12,Actual
+71,HCG-SG,5110,IC Royalty Cost – HCG-US,P&L,COGS,True,HCG-US,IC-005,F00,-1621622,SGD,2024-12,Actual
+72,HCG-SG,1000,Trade Receivables,BS,Asset,False,,,F00,6200000,SGD,2024-12,Actual
+73,HCG-SG,1500,Property Plant & Equipment,BS,Asset,False,,,F00,14000000,SGD,2024-12,Actual
+74,HCG-SG,2600,IC Payable – HCG-UK,BS,Liability,True,HCG-UK,IC-002,F00,-1216216,SGD,2024-12,Actual
+75,HCG-SG,2610,IC Payable – HCG-US,BS,Liability,True,HCG-US,IC-002,F00,-1621622,SGD,2024-12,Actual
+76,HCG-SG,2000,Trade Payables,BS,Liability,False,,,F00,-4500000,SGD,2024-12,Actual
+77,HCG-SG,2100,Long-term Debt,BS,Liability,False,,,F00,-8000000,SGD,2024-12,Actual
+78,HCG-FR,4000,Product Revenue,P&L,Revenue,False,,,F00,15000000,EUR,2024-12,Actual
+79,HCG-FR,4010,Service Revenue,P&L,Revenue,False,,,F00,8200000,EUR,2024-12,Actual
+80,HCG-FR,5000,Cost of Goods Sold,P&L,COGS,False,,,F00,-9800000,EUR,2024-12,Actual
+81,HCG-FR,5010,Service Delivery Cost,P&L,COGS,False,,,F00,-1200000,EUR,2024-12,Actual
+82,HCG-FR,6000,Selling & Marketing,P&L,OpEx,False,,,F00,-4500000,EUR,2024-12,Actual
+83,HCG-FR,6010,General & Admin,P&L,OpEx,False,,,F00,-1100000,EUR,2024-12,Actual
+84,HCG-FR,6020,R&D Expense,P&L,OpEx,False,,,F00,-2200000,EUR,2024-12,Actual
+85,HCG-FR,5100,IC Product Cost – HCG-DE,P&L,COGS,True,HCG-DE,IC-001,F00,-4200000,EUR,2024-12,Actual
+86,HCG-FR,1000,Trade Receivables,BS,Asset,False,,,F00,4100000,EUR,2024-12,Actual
+87,HCG-FR,1500,Property Plant & Equipment,BS,Asset,False,,,F00,18000000,EUR,2024-12,Actual
+88,HCG-FR,2600,IC Payable – HCG-DE,BS,Liability,True,HCG-DE,IC-002,F00,-4200000,EUR,2024-12,Actual
+89,HCG-FR,2000,Trade Payables,BS,Liability,False,,,F00,-5600000,EUR,2024-12,Actual
+90,HCG-FR,2100,Long-term Debt,BS,Liability,False,,,F00,-10000000,EUR,2024-12,Actual
+91,HCG-NL,4000,Product Revenue,P&L,Revenue,False,,,F00,11000000,EUR,2024-12,Actual
+92,HCG-NL,4010,Service Revenue,P&L,Revenue,False,,,F00,5800000,EUR,2024-12,Actual
+93,HCG-NL,5000,Cost of Goods Sold,P&L,COGS,False,,,F00,-7200000,EUR,2024-12,Actual
+94,HCG-NL,5010,Service Delivery Cost,P&L,COGS,False,,,F00,-1800000,EUR,2024-12,Actual
+95,HCG-NL,6000,Selling & Marketing,P&L,OpEx,False,,,F00,-3100000,EUR,2024-12,Actual
+96,HCG-NL,6010,General & Admin,P&L,OpEx,False,,,F00,-700000,EUR,2024-12,Actual
+97,HCG-NL,6020,R&D Expense,P&L,OpEx,False,,,F00,-1400000,EUR,2024-12,Actual
+98,HCG-NL,5100,IC Mgmt Services Cost – HCG-DE,P&L,COGS,True,HCG-DE,IC-004,F00,-1500000,EUR,2024-12,Actual
+99,HCG-NL,1000,Trade Receivables,BS,Asset,False,,,F00,3200000,EUR,2024-12,Actual
+100,HCG-NL,1500,Property Plant & Equipment,BS,Asset,False,,,F00,12000000,EUR,2024-12,Actual
+101,HCG-NL,2600,IC Payable – HCG-DE,BS,Liability,True,HCG-DE,IC-002,F00,-1500000,EUR,2024-12,Actual
+102,HCG-NL,2000,Trade Payables,BS,Liability,False,,,F00,-3800000,EUR,2024-12,Actual
+103,HCG-NL,2100,Long-term Debt,BS,Liability,False,,,F00,-6000000,EUR,2024-12,Actual
+104,HCG-AU,4000,Product Revenue,P&L,Revenue,False,,,F00,14000000,AUD,2024-12,Actual
+105,HCG-AU,4010,Service Revenue,P&L,Revenue,False,,,F00,5500000,AUD,2024-12,Actual
+106,HCG-AU,5000,Cost of Goods Sold,P&L,COGS,False,,,F00,-9100000,AUD,2024-12,Actual
+107,HCG-AU,5010,Service Delivery Cost,P&L,COGS,False,,,F00,-1200000,AUD,2024-12,Actual
+108,HCG-AU,6000,Selling & Marketing,P&L,OpEx,False,,,F00,-3800000,AUD,2024-12,Actual
+109,HCG-AU,6010,General & Admin,P&L,OpEx,False,,,F00,-900000,AUD,2024-12,Actual
+110,HCG-AU,6020,R&D Expense,P&L,OpEx,False,,,F00,-1600000,AUD,2024-12,Actual
+111,HCG-AU,5100,IC Product Cost – HCG-US,P&L,COGS,True,HCG-US,IC-001,F00,-5384615,AUD,2024-12,Actual
+112,HCG-AU,1000,Trade Receivables,BS,Asset,False,,,F00,4800000,AUD,2024-12,Actual
+113,HCG-AU,1500,Property Plant & Equipment,BS,Asset,False,,,F00,22000000,AUD,2024-12,Actual
+114,HCG-AU,2600,IC Payable – HCG-US,BS,Liability,True,HCG-US,IC-002,F00,-5384615,AUD,2024-12,Actual
+115,HCG-AU,2000,Trade Payables,BS,Liability,False,,,F00,-4200000,AUD,2024-12,Actual
+116,HCG-AU,2100,Long-term Debt,BS,Liability,False,,,F00,-9000000,AUD,2024-12,Actual
+117,SHARED,5000,Cost of Goods Sold,P&L,COGS,False,,,F00,-1800000,GBP,2024-12,Actual
+118,SHARED,6010,General & Admin,P&L,OpEx,False,,,F00,-1200000,GBP,2024-12,Actual
+119,SHARED,6020,IT Infrastructure,P&L,OpEx,False,,,F00,-500000,GBP,2024-12,Actual
+120,SHARED,4000,IC Service Revenue – HCG-UK,P&L,Revenue,True,HCG-UK,IC-001,F00,2200000,GBP,2024-12,Actual
+121,SHARED,4010,IC IT Revenue – HCG-DE,P&L,Revenue,True,HCG-DE,IC-004,F00,800000,GBP,2024-12,Actual
+122,SHARED,4020,IC HR Revenue – HCG-US,P&L,Revenue,True,HCG-US,IC-004,F00,600000,GBP,2024-12,Actual
+123,SHARED,1000,Trade Receivables,BS,Asset,False,,,F00,2100000,GBP,2024-12,Actual
+124,SHARED,1500,Property Plant & Equipment,BS,Asset,False,,,F00,5000000,GBP,2024-12,Actual
+125,SHARED,1600,IC Receivable – HCG-UK,BS,Asset,True,HCG-UK,IC-002,F00,2200000,GBP,2024-12,Actual
+126,SHARED,1610,IC Receivable – HCG-DE,BS,Asset,True,HCG-DE,IC-002,F00,800000,GBP,2024-12,Actual
+127,SHARED,1620,IC Receivable – HCG-US,BS,Asset,True,HCG-US,IC-002,F00,600000,GBP,2024-12,Actual
+128,SHARED,2000,Trade Payables,BS,Liability,False,,,F00,-1500000,GBP,2024-12,Actual
