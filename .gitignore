@@ -1,0 +1,49 @@
+# Environment & secrets — NEVER commit these
+.env
+.env.local
+*.pem
+*.key
+secrets.toml
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+
+# Database files (contain real financial data once running)
+*.db
+*.sqlite
+*.sqlite3
+close_command.db
+
+# Vector store data
+vectorstore/
+chroma_db/
+*.chroma
+
+# ML model artifacts (regenerate via training script, don't commit binaries)
+*.pkl
+ml/models/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
